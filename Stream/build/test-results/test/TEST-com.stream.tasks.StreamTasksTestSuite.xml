@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.stream.tasks.StreamTasksTestSuite" tests="16" skipped="0" failures="0" errors="0" timestamp="2023-02-24T11:54:46" hostname="DESKTOP-8QTP3L3" time="0.025">
+  <properties/>
+  <testcase name="removeAllNumbersLessThenTest" classname="com.stream.tasks.StreamTasksTestSuite" time="0.004"/>
+  <testcase name="sumOfSquaresTest" classname="com.stream.tasks.StreamTasksTestSuite" time="0.002"/>
+  <testcase name="getSumOfUniqueNumbersFromListsTest" classname="com.stream.tasks.StreamTasksTestSuite" time="0.002"/>
+  <testcase name="containNumberTest" classname="com.stream.tasks.StreamTasksTestSuite" time="0.003"/>
+  <testcase name="mostCommonElemetsTest" classname="com.stream.tasks.StreamTasksTestSuite" time="0.002"/>
+  <testcase name="getElementsByLengthTest" classname="com.stream.tasks.StreamTasksTestSuite" time="0.0"/>
+  <testcase name="allEvenNumbersTest" classname="com.stream.tasks.StreamTasksTestSuite" time="0.001"/>
+  <testcase name="getUniqueElementsTest" classname="com.stream.tasks.StreamTasksTestSuite" time="0.0"/>
+  <testcase name="getMedianNumberFromSortedListTest" classname="com.stream.tasks.StreamTasksTestSuite" time="0.001"/>
+  <testcase name="calculateAverageTest" classname="com.stream.tasks.StreamTasksTestSuite" time="0.002"/>
+  <testcase name="getNamesTest" classname="com.stream.tasks.StreamTasksTestSuite" time="0.001"/>
+  <testcase name="sumAllNumbersTest" classname="com.stream.tasks.StreamTasksTestSuite" time="0.0"/>
+  <testcase name="findTheBiggestNumberTest" classname="com.stream.tasks.StreamTasksTestSuite" time="0.0"/>
+  <testcase name="filterPrimeNumbersTest" classname="com.stream.tasks.StreamTasksTestSuite" time="0.0"/>
+  <testcase name="findPredicateTest" classname="com.stream.tasks.StreamTasksTestSuite" time="0.001"/>
+  <testcase name="findTheDifferenceBetweenTheLargestAndSmallestNumberTest" classname="com.stream.tasks.StreamTasksTestSuite" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
