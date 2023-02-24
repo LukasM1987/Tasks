@@ -146,4 +146,26 @@ public class TaskTestSuite {
         //Then
         Assert.assertEquals(result, data);
     }
+
+    @Test
+    public void isAnagramTest() {
+        //Given
+        Tasks tasks = new Tasks();
+
+        //When
+        String firstWord = "kot";
+        String secondWord = "tok";
+        boolean firstResult = tasks.isAnagram(firstWord, secondWord);
+        String thirdWord = "batman";
+        String fourthWord = "tok";
+        boolean secondResult = tasks.isAnagram(thirdWord, fourthWord);
+        String fifthWord = "bat";
+        String sixthWord = "tok";
+        boolean thirdResult = tasks.isAnagram(fifthWord, sixthWord);
+
+        //Then
+        Assert.assertTrue(firstResult);
+        Assert.assertFalse(secondResult);
+        Assert.assertFalse(thirdResult);
+    }
 }

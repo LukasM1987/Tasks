@@ -159,4 +159,28 @@ public class Tasks {
         }
         return b;
     }
+
+    public boolean isAnagram(String firstWord, String secondWord) {
+        List<Character> firsChars = new ArrayList<>();
+        List<Character> secondChars= new ArrayList<>();
+        if (firstWord.length() != secondWord.length()) {
+            return false;
+        }
+        for (int i = 0; i < firstWord.length(); i++) {
+            firsChars.add(firstWord.charAt(i));
+            secondChars.add(secondWord.charAt(i));
+        }
+        Collections.sort(firsChars);
+        Collections.sort(secondChars);
+        String newFirstWord = "";
+        String newSecondWord = "";
+        for (int i = 0; i < firsChars.size(); i++) {
+            newFirstWord = newFirstWord + firsChars.get(i);
+            newSecondWord = newSecondWord + secondChars.get(i);
+        }
+        if (!newFirstWord.equals(newSecondWord)) {
+            return false;
+        }
+        return true;
+    }
 }
