@@ -1,4 +1,5 @@
 rootProject.name = 'untitled'
 include 'Stream'
 include 'Stream'
+include 'Algorithms'
 
