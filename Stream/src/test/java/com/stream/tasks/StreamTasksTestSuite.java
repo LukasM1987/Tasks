@@ -1,5 +1,7 @@
 package com.stream.tasks;
 
+import com.stream.tasks.data.Employee;
+import com.stream.tasks.data.Person;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -234,5 +236,54 @@ public class StreamTasksTestSuite {
         Assert.assertEquals(resultSize, data.size());
         Assert.assertEquals("Ola", data.get(0));
         Assert.assertEquals("Ola", data.get(1));
+    }
+
+    @Test
+    public void toUpperCaseTest() {
+        //Given
+        Tasks tasks = new Tasks();
+
+        //When
+        List<String> data = tasks.toUpperCase();
+        int resultSize = 6;
+        String apple = "Jablko";
+
+        //Then
+        Assert.assertEquals(resultSize, data.size());
+        Assert.assertEquals(apple, data.get(0));
+    }
+
+    @Test
+    public void sortBySurnameTest() {
+        //Given
+        Tasks tasks = new Tasks();
+
+        //When
+        List<Person> data = tasks.sortBySurname();
+        int resultSize = 6;
+        String firstPersonSurname = "C";
+
+        //Then
+        Assert.assertEquals(resultSize, data.size());
+        Assert.assertEquals(firstPersonSurname, data.get(0).getSurname());
+    }
+
+    @Test
+    public void quantityOfEmployeesWithThisSameSurnameTest() {
+        //Given
+        Tasks tasks = new Tasks();
+
+        //When
+        Map<String, List<Employee>> data = tasks.quantityOfEmployeesWithThisSameSurname();
+        int resultSize = 3;
+        int smithsQuantity = 3;
+        int ripsonsQuantity = 2;
+        int mcDonaldQuantity = 1;
+
+        //Then
+        Assert.assertEquals(resultSize, data.size());
+        Assert.assertEquals(smithsQuantity, data.get("Smith").size());
+        Assert.assertEquals(ripsonsQuantity, data.get("Ripson").size());
+        Assert.assertEquals(mcDonaldQuantity, data.get("McDonald").size());
     }
 }

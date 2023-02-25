@@ -1,5 +1,8 @@
 package com.stream.tasks;
 
+import com.stream.tasks.data.Employee;
+import com.stream.tasks.data.Person;
+
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
@@ -11,6 +14,18 @@ public class Tasks {
     private static final List<String> animals = Arrays.asList("kot", "pies", "kot", "ptak", "ryba", "pies");
     private static final List<String> fruits = Arrays.asList("jablko", "banan", "gruszka", "ananas", "kiwi", "pomarancza");
     private static final List<String> names = Arrays.asList("Lukasz", "Igor", "Ola", "Ola", "Ignacy", "Kuba", "Julia");
+    private static final List<Person> persons = Arrays.asList(new Person("Lukasz", "M"),
+            new Person("Ola", "K"),
+            new Person("Igor", "R"),
+            new Person("Marcin", "C"),
+            new Person("Zaneta", "K"),
+            new Person("Julia", "M"));
+    private static final List<Employee> employees = Arrays.asList(new Employee("John", "Smith"),
+            new Employee("Betty", "Ripson"),
+            new Employee("Sam", "Smith"),
+            new Employee("Julia", "Ripson"),
+            new Employee("Tom", "McDonald"),
+            new Employee("Julia", "Smith"));
 
     public int findTheBiggestNumber() {
         return numbers.stream().mapToInt(Integer::intValue).max().orElse(0);
@@ -101,5 +116,22 @@ public class Tasks {
 
     public List<String> getNames(char sign) {
         return names.stream().filter(n -> n.startsWith(String.valueOf(sign))).collect(Collectors.toList());
+    }
+
+    public List<String> toUpperCase() {
+        return fruits.stream()
+                .map(f -> String.valueOf(f.charAt(0)).toUpperCase().concat(f.substring(1, f.length())))
+                .collect(Collectors.toList());
+    }
+
+    public List<Person> sortBySurname() {
+        return persons.stream()
+                .sorted(Comparator.comparing(Person::getSurname))
+                .collect(Collectors.toList());
+    }
+
+    public Map<String, List<Employee>> quantityOfEmployeesWithThisSameSurname() {
+        return employees.stream()
+                .collect(Collectors.groupingBy(Employee::getSurname));
     }
 }
