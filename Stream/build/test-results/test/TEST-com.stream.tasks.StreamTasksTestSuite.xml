@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.stream.tasks.StreamTasksTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-25T07:14:42" hostname="DESKTOP-8QTP3L3" time="0.005">
+<testsuite name="com.stream.tasks.StreamTasksTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-25T17:16:04" hostname="DESKTOP-8QTP3L3" time="0.008">
   <properties/>
-  <testcase name="quantityOfEmployeesWithThisSameSurnameTest" classname="com.stream.tasks.StreamTasksTestSuite" time="0.005"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="personsTest" classname="com.stream.tasks.StreamTasksTestSuite" time="0.008"/>
+  <system-out><![CDATA[Lukasz 36
+Kazimierz 67
+Mateusz 34
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
