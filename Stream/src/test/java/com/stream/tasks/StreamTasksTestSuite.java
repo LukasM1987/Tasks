@@ -5,6 +5,7 @@ import com.stream.tasks.data.Person;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -285,5 +286,27 @@ public class StreamTasksTestSuite {
         Assert.assertEquals(smithsQuantity, data.get("Smith").size());
         Assert.assertEquals(ripsonsQuantity, data.get("Ripson").size());
         Assert.assertEquals(mcDonaldQuantity, data.get("McDonald").size());
+    }
+
+    @Test
+    public void personsTest() {
+        //Given
+        Tasks tasks = new Tasks();
+        Map<String, Integer> persons = new HashMap<>();
+        persons.put("Jan", 23);
+        persons.put("Mateusz", 34);
+        persons.put("Lukasz", 36);
+        persons.put("Kazimierz", 67);
+        persons.put("Tomek", 13);
+
+        //When
+        Map<String, Integer> map = tasks.persons(persons);
+        int mapSize = 3;
+        String name = "Mateusz";
+        int age = 34;
+
+        //Then
+        Assert.assertEquals(mapSize, map.size());
+        Assert.assertEquals(age, map.get(name).intValue());
     }
 }

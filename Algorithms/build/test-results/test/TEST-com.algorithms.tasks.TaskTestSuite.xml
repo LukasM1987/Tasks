@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.algorithms.tasks.TaskTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-24T15:01:47" hostname="DESKTOP-8QTP3L3" time="0.002">
+<testsuite name="com.algorithms.tasks.TaskTestSuite" tests="11" skipped="0" failures="0" errors="0" timestamp="2023-02-25T07:18:27" hostname="DESKTOP-8QTP3L3" time="0.008">
   <properties/>
-  <testcase name="isAnagramTest" classname="com.algorithms.tasks.TaskTestSuite" time="0.002"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="sumTest" classname="com.algorithms.tasks.TaskTestSuite" time="0.002"/>
+  <testcase name="highestNumberTest" classname="com.algorithms.tasks.TaskTestSuite" time="0.001"/>
+  <testcase name="getSmallestNumberTest" classname="com.algorithms.tasks.TaskTestSuite" time="0.0"/>
+  <testcase name="reverseArrayTest" classname="com.algorithms.tasks.TaskTestSuite" time="0.0"/>
+  <testcase name="removeDuplicatedAuthorAndHisBookTest" classname="com.algorithms.tasks.TaskTestSuite" time="0.003"/>
+  <testcase name="fibonacciTestSuite" classname="com.algorithms.tasks.TaskTestSuite" time="0.001"/>
+  <testcase name="isPrimeNumbersTest" classname="com.algorithms.tasks.TaskTestSuite" time="0.0"/>
+  <testcase name="isAnagramTest" classname="com.algorithms.tasks.TaskTestSuite" time="0.001"/>
+  <testcase name="getMedianTest" classname="com.algorithms.tasks.TaskTestSuite" time="0.0"/>
+  <testcase name="sortTest" classname="com.algorithms.tasks.TaskTestSuite" time="0.0"/>
+  <testcase name="primeNumbersTest" classname="com.algorithms.tasks.TaskTestSuite" time="0.0"/>
+  <system-out><![CDATA[Parker
+King
+Homer
+Hemingway
+Goethe
+Devices and Desires 
+The Dark Tower 
+Odyssey
+For whom the Bell Tolls
+Faust
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

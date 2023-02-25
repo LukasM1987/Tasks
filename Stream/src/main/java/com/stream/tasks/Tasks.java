@@ -134,4 +134,10 @@ public class Tasks {
         return employees.stream()
                 .collect(Collectors.groupingBy(Employee::getSurname));
     }
+
+    public Map<String, Integer> persons(Map<String, Integer> persons) {
+        return persons.entrySet().stream()
+                .filter(p -> p.getValue() >= 30)
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+    }
 }
